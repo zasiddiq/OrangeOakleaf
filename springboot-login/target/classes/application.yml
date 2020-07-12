@@ -8,3 +8,11 @@ spring:
     password: root
   resources:
     static-locations: classpath:/templates  #访问静态页面
+  thymeleaf:
+    prefix: classpath:/templates/
+    mode: LEGACYHTML5
+    cache: false
+    encoding: UTF-8
+    #     新版本不支持content-type: text/html，故新写法
+    servlet:
+      content-type: text/html
