@@ -49,7 +49,7 @@ class LoginForm extends Component {
 
     return (
 
-      <Form style={{ width: '100%' }} onFinish={this.handleSubmit} className="login-form">
+      <Form style={{ 'width': '100%' }} onFinish={this.handleSubmit} className="login-form">
         <Form.Item
           name="username"
           rules={[
@@ -59,7 +59,7 @@ class LoginForm extends Component {
             },
           ]}
         >
-          <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+          <Input style={{'borderRadius': '10px'}} prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
         </Form.Item>
         <Form.Item
           name="password"
@@ -72,13 +72,14 @@ class LoginForm extends Component {
         >
           <Input
             prefix={<LockOutlined className="site-form-item-icon" />}
+            style={{'borderRadius': '10px'}}
             type="password"
             placeholder="Password"
           />
         </Form.Item>
         <Form.Item>
           <Row justify="center">
-            <Button type="primary" htmlType="submit" className="login-form-button">Login</Button>
+            <Button type="primary" style={{ background: "orange", borderColor: "orange", 'borderRadius': '25px' }} htmlType="submit" className="login-form-button">Login</Button>
           </Row>
         </Form.Item>
       </Form>

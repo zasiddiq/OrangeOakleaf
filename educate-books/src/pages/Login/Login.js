@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card } from "antd"
+import { Card } from "antd";
+import Logo from '../../media/logo.png';
 
 import LoginFrom from './LoginFrom/LoginFrom'
 import './Login.scss'
@@ -18,18 +19,26 @@ export class Login extends Component {
   render() {
     const { loading } = this.state
     return (
-      <div className="login-box flex-wrap flex-center flex-middle flex-direction-column">
-        <Card title={
-          <>
-            <h3 align="center">Welcome to the App!</h3>
-          </>
-        } style={{ width: '100%' }}>
-          <LoginFrom onLoading={this.handleLoading} />
-        </Card>
-
+      <div>
+        <div className="login-box flex-wrap flex-center flex-middle flex-direction-column">
+          <Card 
+            style={{ 'width': '150%', 'borderRadius': '25px' }}
+            >
+            <img style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              width: '55%'
+            }} src={Logo} alt="Logo" />
+            <h3 style={{color:'orange', fontSize:'24px'}}>Sign In</h3>
+            <LoginFrom onLoading={this.handleLoading} />
+          </Card>
+        </div>
       </div>
     );
   }
 }
+
+
 
 export default Login;
