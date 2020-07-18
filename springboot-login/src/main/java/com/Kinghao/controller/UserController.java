@@ -3,6 +3,10 @@ package com.Kinghao.controller;
 import com.Kinghao.bean.Result;
 import com.Kinghao.bean.User;
 import com.Kinghao.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+@Api(tags = "User Controller")
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -23,11 +28,16 @@ public class UserController {
     private static Logger logger= LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     /**
-     * 注册
-     * @param user 参数封装
+     * Register
+     * @param user
      * @return Result
      */
     @PostMapping(value = "/regist")
+    @ApiOperation("Add a User")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "username",value = "Username--Length up to 255",required = true),
+            @ApiImplicitParam(name = "password",value = "Password--Length up to 255",required = true)
+    })
     @ResponseBody
     public Result regist(User user){
         logger.trace("login was request");
@@ -35,11 +45,16 @@ public class UserController {
     }
 
     /**
-     * 登录
-     * @param user 参数封装
+     * Login
+     * @param user
      * @return Result
      */
-    @PostMapping(value = "/login")
+    @GetMapping(value = "/login")
+    @ApiOperation("Check the login information of the user")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "username",value = "Username",required = true),
+            @ApiImplicitParam(name = "password",value = "Password",required = true)
+    })
     @ResponseBody
     public Result login(User user, HttpServletRequest request){
         logger.trace("login was request");
