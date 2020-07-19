@@ -1,0 +1,2 @@
+2020-07-19 at 15:47:26 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-07-19 at 15:47:26 CST TRACE com.Kinghao.service.UserService 65 login - admin login success: Login successfully
