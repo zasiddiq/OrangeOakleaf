@@ -29,7 +29,7 @@ public class UserService {
         try {
             User existUser = userMapper.findUserByName(user.getUsername());
             if(existUser != null){
-                //如果用户名已存在
+                //username has existed
                 result.setMsg("The user name has been used.");
                 logger.trace("For name:"+existUser.getUsername()+";"+result.getMsg());
             }else{
@@ -59,8 +59,10 @@ public class UserService {
             Long userId= userMapper.login(user);
             if(userId == null){
                 result.setMsg("Wrong username or password.");
+                logger.trace(user.getUsername()+" login failed: "+result.getMsg());
             }else{
                 result.setMsg("Login successfully");
+                logger.trace(user.getUsername()+" login success: "+result.getMsg());
                 result.setSuccess(true);
                 user.setId(userId);
                 result.setDetail(user);

@@ -1,0 +1,213 @@
+
+[[_paths]]
+== Paths
+
+[[_addrecordusingpost]]
+=== Add the clicking event of the hotspot
+....
+POST /hotspot/addRecord
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**clickTime.date** +
+__optional__||integer (int32)
+|**Query**|**clickTime.day** +
+__optional__||integer (int32)
+|**Query**|**clickTime.hours** +
+__optional__||integer (int32)
+|**Query**|**clickTime.minutes** +
+__optional__||integer (int32)
+|**Query**|**clickTime.month** +
+__optional__||integer (int32)
+|**Query**|**clickTime.nanos** +
+__optional__||integer (int32)
+|**Query**|**clickTime.seconds** +
+__optional__||integer (int32)
+|**Query**|**clickTime.time** +
+__optional__||integer (int64)
+|**Query**|**clickTime.timezoneOffset** +
+__optional__||integer (int32)
+|**Query**|**clickTime.year** +
+__optional__||integer (int32)
+|**Query**|**hotspotName** +
+__required__|Name of the hotspot|string
+|**Query**|**hotspotType** +
+__required__|Type: words, images or other|string
+|**Query**|**id** +
+__optional__||integer (int64)
+|**Query**|**username** +
+__optional__||string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_result,Result>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* Hotspot Controller
+
+
+[[_loginusingpost]]
+=== Check the login information of the user
+....
+POST /user/login
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**id** +
+__optional__||integer (int64)
+|**Query**|**password** +
+__required__|Password|string
+|**Query**|**userType** +
+__optional__||integer (int32)
+|**Query**|**username** +
+__required__|Username|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_result,Result>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* User Controller
+
+
+[[_logoutusingpost]]
+=== logout
+....
+POST /user/logout
+....
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|string
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* User Controller
+
+
+[[_registusingpost]]
+=== Add a user
+....
+POST /user/regist
+....
+
+
+==== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**id** +
+__optional__||integer (int64)
+|**Query**|**password** +
+__required__|Password–Length up to 255|string
+|**Query**|**userType** +
+__required__|Use numbers 1-6 to indicate the user type|string
+|**Query**|**username** +
+__required__|Username–Length up to 255|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_result,Result>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `*/*`
+
+
+==== Tags
+
+* User Controller
+
+
+
