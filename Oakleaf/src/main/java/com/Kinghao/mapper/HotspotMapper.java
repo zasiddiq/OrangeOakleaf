@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Options;
 import org.springframework.stereotype.Repository;
 
 @Mapper
-//@Repository
+@Repository
 public interface HotspotMapper {
     @Insert("insert into hotspot values(#{id},#{hotspotName},#{hotspotType},#{username},#{clickTime})")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
