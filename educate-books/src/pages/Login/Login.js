@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card } from "antd";
-import Logo from '../../media/logo.png';
+import Logo from '../../media/image.png';
 
 import LoginFrom from './LoginFrom/LoginFrom'
 import './Login.scss'
@@ -30,7 +30,8 @@ export class Login extends Component {
               marginRight: 'auto',
               width: '55%'
             }} src={Logo} alt="Logo" />
-            <h3 style={{color:'orange', fontSize:'24px'}}>Sign In</h3>
+            <h3 style={{color:'orange', fontSize:'24px', textAlign: 'center'}}>Orange Oakleaf</h3>
+            <h3 style={{color:'orange', fontSize:'18px'}}>Sign In</h3>
             <LoginFrom onLoading={this.handleLoading} />
           </Card>
         </div>

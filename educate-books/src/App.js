@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 
 import Nav from "./components/Nav";
 import Login from "./pages/Login/Login";
+import Welcome from "./pages/Welcome/Welcome";
 import { Fragment } from "react";
 import Footer from "./components/Foot";
 // import './App.css'
@@ -24,12 +25,18 @@ class App extends Component {
             {!authUser
               ?
               <Route render={() => (
-                <Login />
+                <Fragment>
+                  <Switch>
+                    <Route path="/" exact component={Welcome} />
+                    <Route path="/login" exact component={Login} />
+                  </Switch>
+                </Fragment>
               )} />
               :
               <Fragment>
                 <Switch>
                   <Route path="/" exact component={Home} />
+
                   {/* <Route path="/" component={MyBookList} /> */}
                 </Switch>
                 {/* <Footer /> */}
