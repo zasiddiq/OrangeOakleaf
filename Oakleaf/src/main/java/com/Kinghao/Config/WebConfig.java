@@ -1,5 +1,4 @@
 package com.Kinghao.Config;
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -115,4 +114,6 @@ public class WebConfig implements WebMvcConfigurer {
     public MessageCodesResolver getMessageCodesResolver() {
         return null;
     }
+
+
 }
