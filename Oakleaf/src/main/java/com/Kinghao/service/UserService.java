@@ -56,7 +56,8 @@ public class UserService {
         result.setSuccess(false);
         result.setDetail(null);
         try {
-            Long userId= userMapper.login(user);
+            User fullUserInfo=userMapper.login(user);
+            Long userId= fullUserInfo.getId();
             if(userId == null){
                 result.setMsg("Wrong username or password.");
                 logger.trace(user.getUsername()+" login failed: "+result.getMsg());
@@ -65,6 +66,7 @@ public class UserService {
                 logger.trace(user.getUsername()+" login success: "+result.getMsg());
                 result.setSuccess(true);
                 user.setId(userId);
+                user.setUserType(fullUserInfo.getUserType());
                 result.setDetail(user);
             }
         } catch (Exception e) {

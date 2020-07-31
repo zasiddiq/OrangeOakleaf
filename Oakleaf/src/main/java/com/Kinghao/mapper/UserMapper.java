@@ -35,6 +35,6 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @Select("select u.id from user u where u.username = #{username} and password = #{password}")
-    Long login(User user);
+    @Select("select * from user u where u.username = #{username} and password = #{password}")
+    User login(User user);
 }
