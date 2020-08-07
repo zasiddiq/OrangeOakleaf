@@ -33,7 +33,9 @@ public class HotspotController {
     @ApiOperation("Add the clicking event of the hotspot")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "hotspotName",value = "Name of the hotspot",required = true),
-            @ApiImplicitParam(name = "hotspotType",value = "Type: words, images or other",required = true)
+            @ApiImplicitParam(name = "hotspotType",value = "Type: quotes, vocabulary, multiple_choice, open_ended_discussion, replay_button, next_button, back_button",required = true),
+            @ApiImplicitParam(name = "clickResult",value = "Record the answer(if there is one)"),
+            @ApiImplicitParam(name = "remarks",value = "Extra remark of the clicking event(if there is one)"),
     })
     @ResponseBody
     public Result addRecord(Hotspot hotspot, HttpServletRequest request){

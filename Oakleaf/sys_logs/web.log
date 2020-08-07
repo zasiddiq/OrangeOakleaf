@@ -13,3 +13,6 @@
 2020-07-28 at 09:02:55 CST TRACE com.Kinghao.service.HotspotService 27 addRecord - admin clicked butterfly
 2020-07-31 at 09:55:20 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
 2020-07-31 at 09:55:20 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-07 at 12:19:22 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-07 at 12:19:22 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-07 at 12:19:51 CST TRACE com.Kinghao.service.HotspotService 27 addRecord - admin clicked question on page 4
