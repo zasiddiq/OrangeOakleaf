@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface HotspotMapper {
-    @Insert("insert into hotspot values(#{id},#{hotspotName},#{hotspotType},#{username},#{clickTime})")
+    @Insert("insert into hotspot values(#{id},#{hotspotName},#{hotspotType},#{username},#{clickResult},#{clickTime},#{remarks})")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     void addRecord(Hotspot hotspot);
 }

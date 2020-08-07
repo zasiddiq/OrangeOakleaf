@@ -66,6 +66,7 @@ public class UserService {
                 logger.trace(user.getUsername()+" login success: "+result.getMsg());
                 result.setSuccess(true);
                 user.setId(userId);
+                user.setPassword("");
                 user.setUserType(fullUserInfo.getUserType());
                 result.setDetail(user);
             }

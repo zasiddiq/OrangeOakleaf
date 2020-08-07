@@ -8,7 +8,9 @@ public class Hotspot {
     private String hotspotName;
     private String hotspotType;
     private String username;
+    private String clickResult;
     private Timestamp clickTime;
+    private String remarks;
 
     public Long getId() {
         return id;
@@ -41,4 +43,20 @@ public class Hotspot {
     public Timestamp getClickTime() { return clickTime; }
 
     public void setClickTime(Timestamp clickTime) { this.clickTime = clickTime; }
+
+    public String getClickResult() {
+        return clickResult;
+    }
+
+    public void setClickResult(String clickResult) {
+        this.clickResult = clickResult;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
 }
