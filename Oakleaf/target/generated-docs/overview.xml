@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Our API Documentation</title>
+<date>2020-07-19</date>
+</info>
+<section xml:id="_overview">
+<title>Overview</title>
+<simpara>Oakleaf</simpara>
+<section xml:id="_version_information">
+<title>Version information</title>
+<simpara><emphasis>Version</emphasis> : 1.0</simpara>
+</section>
+<section xml:id="_uri_scheme">
+<title>URI scheme</title>
+<simpara><emphasis>Host</emphasis> : localhost:9090<?asciidoc-br?>
+<emphasis>BasePath</emphasis> : /</simpara>
+</section>
+<section xml:id="_tags">
+<title>Tags</title>
+<itemizedlist>
+<listitem>
+<simpara>Hotspot Controller : Hotspot Controller</simpara>
+</listitem>
+<listitem>
+<simpara>User Controller : User Controller</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</article>

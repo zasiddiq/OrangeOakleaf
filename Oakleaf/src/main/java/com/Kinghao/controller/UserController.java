@@ -77,4 +77,8 @@ public class UserController {
         return "login";
     }
 }
-
+/**
+ * Got api:
+ * mvn swagger2markup:convertSwagger2markup
+ * mvn generate-resources
+ */

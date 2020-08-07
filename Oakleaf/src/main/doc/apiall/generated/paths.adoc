@@ -14,6 +14,8 @@ POST /hotspot/addRecord
 [options="header", cols=".^2,.^3,.^9,.^4"]
 |===
 |Type|Name|Description|Schema
+|**Query**|**clickResult** +
+__optional__|Record the answer(if there is one)|string
 |**Query**|**clickTime.date** +
 __optional__||integer (int32)
 |**Query**|**clickTime.day** +
@@ -37,9 +39,11 @@ __optional__||integer (int32)
 |**Query**|**hotspotName** +
 __required__|Name of the hotspot|string
 |**Query**|**hotspotType** +
-__required__|Type: words, images or other|string
+__required__|Type: quotes, vocabulary, multiple_choice, open_ended_discussion, replay_button, next_button, back_button|string
 |**Query**|**id** +
 __optional__||integer (int64)
+|**Query**|**remarks** +
+__optional__|Extra remark of the clicking event(if there is one)|string
 |**Query**|**username** +
 __optional__||string
 |===

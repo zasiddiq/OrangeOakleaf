@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Paths</title>
+<date>2020-07-19</date>
+</info>
+<section xml:id="_paths">
+<title>Paths</title>
+<section xml:id="_addrecordusingpost">
+<title>Add the clicking event of the hotspot</title>
+<literallayout class="monospaced">POST /hotspot/addRecord</literallayout>
+<section xml:id="_parameters">
+<title>Parameters</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="11*"/>
+<colspec colname="col_2" colwidth="16*"/>
+<colspec colname="col_3" colwidth="50*"/>
+<colspec colname="col_4" colwidth="22*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">Type</entry>
+<entry align="left" valign="middle">Name</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.date</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.day</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.hours</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.minutes</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.month</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.nanos</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.seconds</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.time</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int64)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.timezoneOffset</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">clickTime.year</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">hotspotName</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Name of the hotspot</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">hotspotType</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Type: words, images or other</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">id</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int64)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">username</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_responses">
+<title>Responses</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="10*"/>
+<colspec colname="col_2" colwidth="70*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">HTTP Code</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">200</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>OK</simpara></entry>
+<entry align="left" valign="middle"><simpara><link linkend="_result">Result</link></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">201</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Created</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">401</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Unauthorized</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">403</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Forbidden</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">404</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Not Found</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_consumes">
+<title>Consumes</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_produces">
+<title>Produces</title>
+<itemizedlist>
+<listitem>
+<simpara><literal><emphasis role="strong">/</emphasis></literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_tags">
+<title>Tags</title>
+<itemizedlist>
+<listitem>
+<simpara>Hotspot Controller</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="_loginusingpost">
+<title>Check the login information of the user</title>
+<literallayout class="monospaced">POST /user/login</literallayout>
+<section xml:id="_parameters_2">
+<title>Parameters</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="11*"/>
+<colspec colname="col_2" colwidth="16*"/>
+<colspec colname="col_3" colwidth="50*"/>
+<colspec colname="col_4" colwidth="22*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">Type</entry>
+<entry align="left" valign="middle">Name</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">id</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int64)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">password</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Password</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">userType</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">username</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Username</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_responses_2">
+<title>Responses</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="10*"/>
+<colspec colname="col_2" colwidth="70*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">HTTP Code</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">200</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>OK</simpara></entry>
+<entry align="left" valign="middle"><simpara><link linkend="_result">Result</link></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">201</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Created</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">401</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Unauthorized</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">403</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Forbidden</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">404</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Not Found</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_consumes_2">
+<title>Consumes</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_produces_2">
+<title>Produces</title>
+<itemizedlist>
+<listitem>
+<simpara><literal><emphasis role="strong">/</emphasis></literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_tags_2">
+<title>Tags</title>
+<itemizedlist>
+<listitem>
+<simpara>User Controller</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="_logoutusingpost">
+<title>logout</title>
+<literallayout class="monospaced">POST /user/logout</literallayout>
+<section xml:id="_responses_3">
+<title>Responses</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="10*"/>
+<colspec colname="col_2" colwidth="70*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">HTTP Code</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">200</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>OK</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">201</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Created</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">401</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Unauthorized</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">403</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Forbidden</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">404</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Not Found</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_consumes_3">
+<title>Consumes</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_produces_3">
+<title>Produces</title>
+<itemizedlist>
+<listitem>
+<simpara><literal><emphasis role="strong">/</emphasis></literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_tags_3">
+<title>Tags</title>
+<itemizedlist>
+<listitem>
+<simpara>User Controller</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="_registusingpost">
+<title>Add a user</title>
+<literallayout class="monospaced">POST /user/regist</literallayout>
+<section xml:id="_parameters_3">
+<title>Parameters</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="11*"/>
+<colspec colname="col_2" colwidth="16*"/>
+<colspec colname="col_3" colwidth="50*"/>
+<colspec colname="col_4" colwidth="22*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">Type</entry>
+<entry align="left" valign="middle">Name</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">id</emphasis><?asciidoc-br?>
+<emphasis>optional</emphasis></simpara></entry>
+<entry align="left" valign="middle"></entry>
+<entry align="left" valign="middle"><simpara>integer (int64)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">password</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Password–Length up to 255</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">userType</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Use numbers 1-6 to indicate the user type</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">username</emphasis><?asciidoc-br?>
+<emphasis>required</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Username–Length up to 255</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_responses_4">
+<title>Responses</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="10*"/>
+<colspec colname="col_2" colwidth="70*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">HTTP Code</entry>
+<entry align="left" valign="middle">Description</entry>
+<entry align="left" valign="middle">Schema</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">200</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>OK</simpara></entry>
+<entry align="left" valign="middle"><simpara><link linkend="_result">Result</link></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">201</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Created</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">401</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Unauthorized</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">403</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Forbidden</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">404</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>Not Found</simpara></entry>
+<entry align="left" valign="middle"><simpara>No Content</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_consumes_4">
+<title>Consumes</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_produces_4">
+<title>Produces</title>
+<itemizedlist>
+<listitem>
+<simpara><literal><emphasis role="strong">/</emphasis></literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_tags_4">
+<title>Tags</title>
+<itemizedlist>
+<listitem>
+<simpara>User Controller</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</section>
+</article>
