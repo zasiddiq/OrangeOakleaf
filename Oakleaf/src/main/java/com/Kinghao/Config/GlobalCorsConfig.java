@@ -112,7 +112,8 @@ public class GlobalCorsConfig {
                     registry.addMapping("/**")
                             .allowedMethods("GET", "POST", "OPTION")
                             .allowedHeaders("*")
-                            .allowedOrigins("*");
+                            .allowedOrigins("*")
+                            .allowCredentials(true);
                 }
             };
         }
