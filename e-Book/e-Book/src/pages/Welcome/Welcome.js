@@ -11,7 +11,6 @@ export class Welcome extends Component {
     this.setState({ loading: true });
   };
 
-
   render() {
     const { loading } = this.state
     return (

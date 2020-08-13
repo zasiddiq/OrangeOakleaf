@@ -1,13 +1,13 @@
 {
   "files": {
     "index.css": "/static/css/index.cd966e83.chunk.css",
-    "index.js": "/static/js/index.f19686a3.chunk.js",
-    "index.js.map": "/static/js/index.f19686a3.chunk.js.map",
+    "index.js": "/static/js/index.632bc03b.chunk.js",
+    "index.js.map": "/static/js/index.632bc03b.chunk.js.map",
     "runtime-index.js": "/static/js/runtime-index.1c947667.js",
     "runtime-index.js.map": "/static/js/runtime-index.1c947667.js.map",
     "static/css/2.9c8c8187.chunk.css": "/static/css/2.9c8c8187.chunk.css",
-    "static/js/2.d5c7c953.chunk.js": "/static/js/2.d5c7c953.chunk.js",
-    "static/js/2.d5c7c953.chunk.js.map": "/static/js/2.d5c7c953.chunk.js.map",
+    "static/js/2.729efca5.chunk.js": "/static/js/2.729efca5.chunk.js",
+    "static/js/2.729efca5.chunk.js.map": "/static/js/2.729efca5.chunk.js.map",
     "books/01/ar/14562.mp3": "/books/01/ar/14562.mp3",
     "books/01/ar/14567.mp3": "/books/01/ar/14567.mp3",
     "books/01/ar/14570.mp3": "/books/01/ar/14570.mp3",
@@ -2950,11 +2950,11 @@
     "books/06/index.html": "/books/06/index.html",
     "books/06/project.txt": "/books/06/project.txt",
     "index.html": "/index.html",
-    "precache-manifest.984279ca25940ec99f5bd6f59f1e2eb0.js": "/precache-manifest.984279ca25940ec99f5bd6f59f1e2eb0.js",
+    "precache-manifest.b5709adc0f28f7a1df23d9f17b792da0.js": "/precache-manifest.b5709adc0f28f7a1df23d9f17b792da0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9c8c8187.chunk.css.map": "/static/css/2.9c8c8187.chunk.css.map",
     "static/css/index.cd966e83.chunk.css.map": "/static/css/index.cd966e83.chunk.css.map",
-    "static/js/2.d5c7c953.chunk.js.LICENSE.txt": "/static/js/2.d5c7c953.chunk.js.LICENSE.txt",
+    "static/js/2.729efca5.chunk.js.LICENSE.txt": "/static/js/2.729efca5.chunk.js.LICENSE.txt",
     "static/media/image.png": "/static/media/image.dd608d34.png",
     "static/media/imageDropShadow.png": "/static/media/imageDropShadow.4a439170.png"
   },
@@ -2962,9 +2962,9 @@
     "index": [
       "static/js/runtime-index.1c947667.js",
       "static/css/2.9c8c8187.chunk.css",
-      "static/js/2.d5c7c953.chunk.js",
+      "static/js/2.729efca5.chunk.js",
       "static/css/index.cd966e83.chunk.css",
-      "static/js/index.f19686a3.chunk.js"
+      "static/js/index.632bc03b.chunk.js"
     ]
   }
 }
