@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Page Index</title>
+</head>
+<body>
+<h2>corstest</h2>
+<p id="info"></p>
+<button id="btn">addrecord</button>
+
+<!--End mc_embed_signup-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $.ajax({
+        url: "http://localhost:9090/user/login",
+        method: "POST",
+        data: {"password":"123456", "username":"admin"},
+        success: function (data) {
+            $("#info").html("success" + JSON.stringify(data));
+        },
+        error: function (data) {
+            $("#info").html("fail" + JSON.stringify(data));
+        }
+    })
+    $("#btn").click(()=> {
+        $.ajax({
+        url: "http://localhost:9090/hotspot/addRecord",
+        method: "POST",
+        data: {"hotspotType":"vocabulary", "hotspotName":"test"},
+        success: function (data) {
+            alert("success" + JSON.stringify(data));
+        },
+        error: function (data) {
+            alert("fail" + JSON.stringify(data));
+        }
+        });
+    });
+    
+</script>
+</html>
