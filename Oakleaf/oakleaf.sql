@@ -29,3 +29,25 @@ CREATE TABLE `hotspot` (
   `remarks` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS unlockBook;
+CREATE TABLE unlockBook (
+	id bigint(50) not null auto_increment,
+    username varchar(255) not null,
+    bookid tinyint not null,
+    constraint bookid check (bookid in (1, 2, 3, 4, 5, 6)),
+    primary key (id) );
+
+DROP TABLE IF EXISTS readBook;
+CREATE TABLE readBook (
+	id bigint(50) not null auto_increment,
+    username varchar(255) not null,
+    bookid tinyint not null,
+    constraint bookid check (bookid in (1, 2, 3, 4, 5, 6)),
+    opentime datetime DEFAULT NULL,
+    closetime datetime DEFAULT NULL,
+    primary key (id) );
+
+    
+    
+    
