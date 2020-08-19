@@ -4,6 +4,7 @@ import com.Kinghao.bean.UnlockBook;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -15,7 +16,8 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface unlockBookMapper {
-    @Insert("insert into unlockBook values(#{id},#{username},#{bookId},#{unlockTime})")
+    @Update("update user set bookPointer=#{bookId} where username=#{username};"+
+            "insert into unlockBook values(#{id},#{username},#{bookId},#{unlockTime})")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     void addRecord(UnlockBook unlockBook);
 }

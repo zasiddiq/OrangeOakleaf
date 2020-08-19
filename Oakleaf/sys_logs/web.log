@@ -21,3 +21,17 @@
 2020-08-08 at 13:46:40 CST TRACE com.Kinghao.service.HotspotService 27 addRecord - admin clicked hh
 2020-08-17 at 17:13:50 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
 2020-08-17 at 17:13:50 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:22:21 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:22:21 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:28:36 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:28:36 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:33:48 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:33:48 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:36:06 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:36:06 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:40:39 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:40:39 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:45:37 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:45:37 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+2020-08-19 at 18:47:36 CST TRACE com.Kinghao.controller.UserController 64 login - login was request
+2020-08-19 at 18:47:36 CST TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully

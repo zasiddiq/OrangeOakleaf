@@ -68,6 +68,7 @@ public class UserService {
                 user.setId(userId);
                 user.setPassword("");
                 user.setUserType(fullUserInfo.getUserType());
+                user.setBookPointer(fullUserInfo.getBookPointer());
                 result.setDetail(user);
             }
         } catch (Exception e) {

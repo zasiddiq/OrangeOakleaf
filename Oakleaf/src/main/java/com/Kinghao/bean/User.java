@@ -20,6 +20,8 @@ public class User {
 
     private Integer userType;
 
+    private Integer bookPointer;
+
 
 
     public Long getId() {
@@ -49,4 +51,12 @@ public class User {
     public Integer getUserType() { return userType; }
 
     public void setUserType(Integer userType) { this.userType = userType; }
+
+    public Integer getBookPointer() {
+        return bookPointer;
+    }
+
+    public void setBookPointer(Integer bookPointer) {
+        this.bookPointer = bookPointer;
+    }
 }
