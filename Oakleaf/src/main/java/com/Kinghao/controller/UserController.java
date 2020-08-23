@@ -1,7 +1,10 @@
 package com.Kinghao.controller;
 
+import com.Kinghao.bean.ReadBook;
 import com.Kinghao.bean.Result;
 import com.Kinghao.bean.User;
+import com.Kinghao.mapper.ReadBookMapper;
+import com.Kinghao.service.ReadBookService;
 import com.Kinghao.service.UserService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
@@ -26,6 +29,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private ReadBookService readBookService;
 
     private static Logger logger= LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
@@ -72,9 +77,10 @@ public class UserController {
     }
     @PostMapping("/logout")
     public String logout(HttpServletRequest request){
+        readBookService.closeBook(request);
         HttpSession session=request.getSession();
         session.invalidate();
-        return "login";
+        return "logout";
     }
 }
 /**

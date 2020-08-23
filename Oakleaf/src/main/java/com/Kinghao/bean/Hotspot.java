@@ -11,6 +11,7 @@ public class Hotspot {
     private String clickResult;
     private Timestamp clickTime;
     private String remarks;
+    private int readBookId;
 
     public Long getId() {
         return id;
@@ -58,5 +59,13 @@ public class Hotspot {
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public int getReadBookId() {
+        return readBookId;
+    }
+
+    public void setReadBookId(int readBookId) {
+        this.readBookId = readBookId;
     }
 }

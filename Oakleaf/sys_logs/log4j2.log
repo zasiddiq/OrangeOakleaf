@@ -1,2 +1,2 @@
-18:47:36.419 TRACE com.Kinghao.controller.UserController 64 login - login was request
-18:47:36.465 TRACE com.Kinghao.service.UserService 66 login - admin login success: Login successfully
+19:05:28.485 TRACE com.Kinghao.controller.UserController 69 login - login was request
+19:05:28.529 TRACE com.Kinghao.service.UserService 66 login - yhc login success: Login successfully

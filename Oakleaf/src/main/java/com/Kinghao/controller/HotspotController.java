@@ -1,6 +1,7 @@
 package com.Kinghao.controller;
 
 import com.Kinghao.bean.Hotspot;
+import com.Kinghao.bean.ReadBook;
 import com.Kinghao.bean.Result;
 import com.Kinghao.bean.User;
 import com.Kinghao.service.HotspotService;
@@ -41,10 +42,12 @@ public class HotspotController {
     public Result addRecord(Hotspot hotspot, HttpServletRequest request){
         HttpSession session=request.getSession();
         User curUser=(User)session.getAttribute("user");
+        ReadBook curBook = (ReadBook)session.getAttribute("readBook");
         String curUsername=curUser.getUsername();
         Timestamp curTime=new Timestamp(System.currentTimeMillis());
         hotspot.setUsername(curUsername);
         hotspot.setClickTime(curTime);
+        hotspot.setReadBookId(curBook.getId());
         return hotspotService.addRecord(hotspot);
     }
 }
