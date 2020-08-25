@@ -20,6 +20,8 @@ __BasePath__ : /
 === Tags
 
 * Hotspot Controller : Hotspot Controller
+* Read a book : Read Controller
+* Unlock a new book : Unlock Controller
 * User Controller : User Controller
 
 
