@@ -4,18 +4,43 @@
     <list default="true" id="c3f03bc7-df91-4364-bbcd-813930e96dc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oakleaf.sql" beforeDir="false" afterPath="$PROJECT_DIR$/oakleaf.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/bean/Hotspot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/bean/Hotspot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/HotspotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/HotspotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/HotspotMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/HotspotMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/definitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/definitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/paths.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/paths.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/security.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sys_logs/log4j2.log" beforeDir="false" afterPath="$PROJECT_DIR$/sys_logs/log4j2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_logs/web.log" beforeDir="false" afterPath="$PROJECT_DIR$/sys_logs/web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/HotspotController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/HotspotController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/HotspotMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/HotspotMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Oakleaf-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Oakleaf.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/GlobalCorsConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/GlobalCorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/Swagger2Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/Hotspot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/UnlockBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/HotspotController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UnlockController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/HotspotMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/unlockBookMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/service/HotspotService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/logout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/regist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tryHotspot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-docs/definitions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-docs/overview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-docs/paths.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-docs/security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +150,7 @@
       <workItem from="1597302156889" duration="2391000" />
       <workItem from="1597654083756" duration="2500000" />
       <workItem from="1597831058604" duration="2670000" />
-      <workItem from="1597904340823" duration="14388000" />
+      <workItem from="1597904340823" duration="17077000" />
     </task>
     <task id="LOCAL-00001" summary="2020/8/7&#10;Update hotspot;&#10;Hide the password in response.">
       <created>1596774216545</created>
@@ -165,38 +190,38 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="533" y="158" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1598135586042" />
-    <state width="1398" height="95" key="GridCell.Tab.0.bottom" timestamp="1598148272704">
+    <state width="1398" height="475" key="GridCell.Tab.0.bottom" timestamp="1598333290125">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598148272704" />
-    <state width="1398" height="95" key="GridCell.Tab.0.center" timestamp="1598148272704">
+    <state width="1398" height="475" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598333290125" />
+    <state width="1398" height="475" key="GridCell.Tab.0.center" timestamp="1598333290124">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598148272704" />
-    <state width="1398" height="95" key="GridCell.Tab.0.left" timestamp="1598148272703">
+    <state width="1398" height="475" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598333290124" />
+    <state width="1398" height="475" key="GridCell.Tab.0.left" timestamp="1598333290121">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598148272703" />
-    <state width="1398" height="95" key="GridCell.Tab.0.right" timestamp="1598148272704">
+    <state width="1398" height="475" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598333290121" />
+    <state width="1398" height="475" key="GridCell.Tab.0.right" timestamp="1598333290124">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598148272704" />
-    <state width="1398" height="95" key="GridCell.Tab.1.bottom" timestamp="1598148272706">
+    <state width="1398" height="475" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598333290124" />
+    <state width="1398" height="475" key="GridCell.Tab.1.bottom" timestamp="1598333290126">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598148272706" />
-    <state width="1398" height="95" key="GridCell.Tab.1.center" timestamp="1598148272705">
+    <state width="1398" height="475" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
+    <state width="1398" height="475" key="GridCell.Tab.1.center" timestamp="1598333290126">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1598148272705" />
-    <state width="1398" height="95" key="GridCell.Tab.1.left" timestamp="1598148272705">
+    <state width="1398" height="475" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
+    <state width="1398" height="475" key="GridCell.Tab.1.left" timestamp="1598333290125">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1598148272705" />
-    <state width="1398" height="95" key="GridCell.Tab.1.right" timestamp="1598148272705">
+    <state width="1398" height="475" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1598333290125" />
+    <state width="1398" height="475" key="GridCell.Tab.1.right" timestamp="1598333290126">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="95" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1598148272705" />
+    <state width="1398" height="475" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
   </component>
   <component name="masterDetails">
     <states>
