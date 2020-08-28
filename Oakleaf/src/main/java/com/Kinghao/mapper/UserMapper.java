@@ -26,7 +26,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @Insert("insert into user values(NULL,#{username},#{password},#{userType},0)")
+    @Insert("insert into user values(NULL,#{username},#{password},#{userType},#{bookPointer})")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     void regist(User user);
 
@@ -35,6 +35,6 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @Select("select * from user u where u.username = #{username} and password = #{password}")
+    @Select("select * from user u where u.username = #{username}")
     User login(User user);
 }

@@ -2,8 +2,10 @@ package com.Kinghao.controller;
 
 import com.Kinghao.bean.ReadBook;
 import com.Kinghao.bean.Result;
+import com.Kinghao.bean.UnlockBook;
 import com.Kinghao.bean.User;
 import com.Kinghao.mapper.ReadBookMapper;
+import com.Kinghao.mapper.unlockBookMapper;
 import com.Kinghao.service.ReadBookService;
 import com.Kinghao.service.UserService;
 import com.alibaba.fastjson.JSON;
@@ -31,6 +33,8 @@ public class UserController {
     private UserService userService;
     @Autowired
     private ReadBookService readBookService;
+    @Autowired
+    private unlockBookMapper unlockMapper;
 
     private static Logger logger= LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
@@ -44,12 +48,14 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "username",value = "Username--Length up to 255",required = true),
             @ApiImplicitParam(name = "password",value = "Password--Length up to 255",required = true),
-            @ApiImplicitParam(name = "userType",value = "Use numbers 1-6 to indicate the user type",required = true)
+            @ApiImplicitParam(name = "userType",value = "Use numbers 1-3 to indicate the user type",required = true)
     })
 
     @ResponseBody
     public Result regist(User user){
-        logger.trace("login was request");
+        logger.trace("regist was request");
+        Integer userType = user.getUserType();
+        user.setBookPointer(userType == 1 ? 5 : (userType == 2 ? 0 : 3));
         return userService.regist(user);
     }
 
@@ -69,6 +75,7 @@ public class UserController {
         logger.trace("login was request");
         Result R1=userService.login(user);
         if(R1.isSuccess()){
+            user.setPassword("");
             HttpSession session=request.getSession();
             session.setAttribute("user",user);
             R1.setMsg(user.getUsername()+", Hello!");

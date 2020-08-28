@@ -1,10 +1,8 @@
 package com.Kinghao.controller;
 
-import com.Kinghao.bean.Hotspot;
-import com.Kinghao.bean.Result;
-import com.Kinghao.bean.UnlockBook;
-import com.Kinghao.bean.User;
+import com.Kinghao.bean.*;
 import com.Kinghao.mapper.unlockBookMapper;
+import com.Kinghao.service.UnlockService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -13,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -32,7 +31,7 @@ import java.sql.Timestamp;
 @RequestMapping("/unlock")
 public class UnlockController {
     @Autowired
-    private unlockBookMapper unlockBookMapper;
+    private UnlockService unlockService;
 
     private static Logger logger= LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
@@ -42,13 +41,14 @@ public class UnlockController {
             @ApiImplicitParam(name = "bookId",value = "New Unlocked bookId",required = true),
     })
     @ResponseBody
-    public void addRecord(UnlockBook unlockBook, HttpServletRequest request){
-        HttpSession session=request.getSession();
-        User curUser=(User)session.getAttribute("user");
-        String curUsername=curUser.getUsername();
-        Timestamp curTime=new Timestamp(System.currentTimeMillis());
-        unlockBook.setUsername(curUsername);
-        unlockBook.setUnlockTime(curTime);
-        unlockBookMapper.addRecord(unlockBook);
+    public String addRecord(UnlockBook unlockBook, HttpServletRequest request) {
+        return unlockService.addRecord(unlockBook, request);
+    }
+
+    @GetMapping(value="/unlockBooks")
+    @ApiOperation(value="check unlocked books of current user")
+    @ResponseBody
+    public Result checkUnlock(HttpServletRequest request) {
+        return unlockService.checkUnlock(request);
     }
 }

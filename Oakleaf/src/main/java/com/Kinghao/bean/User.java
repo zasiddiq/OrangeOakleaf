@@ -1,5 +1,8 @@
 package com.Kinghao.bean;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
@@ -11,11 +14,11 @@ import javax.persistence.*;
 
 public class User {
 
-
     private Long id;
 
     private String username;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     private Integer userType;

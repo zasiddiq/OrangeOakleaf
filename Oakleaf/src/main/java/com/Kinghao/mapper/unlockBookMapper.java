@@ -1,10 +1,7 @@
 package com.Kinghao.mapper;
 
 import com.Kinghao.bean.UnlockBook;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -20,4 +17,13 @@ public interface unlockBookMapper {
             "insert into unlockBook values(#{id},#{username},#{bookId},#{unlockTime})")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     void addRecord(UnlockBook unlockBook);
+
+    @Select("select bookid from unlockBook where username=#{username};")
+    String[] checkUnlock(@Param("username") String username);
+
+    @Select("select bookid from unlockBook where username=#{username} and bookid=#{bookid};")
+    String[] checkRepeat(@Param("username") String username,
+                         @Param("bookid") Integer bookid);
 }
+
+

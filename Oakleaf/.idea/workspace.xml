@@ -2,52 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f03bc7-df91-4364-bbcd-813930e96dc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/service/UnlockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/definitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/definitions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/paths.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/paths.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/html/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/html/security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_logs/log4j2.log" beforeDir="false" afterPath="$PROJECT_DIR$/sys_logs/log4j2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Oakleaf-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Oakleaf.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/GlobalCorsConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/GlobalCorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/Swagger2Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/Config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/Hotspot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/UnlockBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/bean/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/HotspotController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UnlockController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/HotspotMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/mapper/unlockBookMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/service/HotspotService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Kinghao/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/regist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tryHotspot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-docs/definitions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-docs/overview.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-docs/paths.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-docs/security.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/generated/overview.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/generated/overview.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/doc/apiall/generated/paths.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/doc/apiall/generated/paths.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_logs/log4j2.log" beforeDir="false" afterPath="$PROJECT_DIR$/sys_logs/log4j2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/ReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/ReadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UnlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UnlockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/unlockBookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/mapper/unlockBookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/service/ReadBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/service/ReadBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Kinghao/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Kinghao/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sys_logs/web.log" beforeDir="false" afterPath="$PROJECT_DIR$/sys_logs/web.log" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,38 +26,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Oakleaf" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Kinghao/controller/ReadController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-505">
-              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1881" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="88" column="3" lean-forward="true" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,81 +59,6 @@
   </component>
   <component name="ProjectId" id="1gLqhN1J5bVlAh5MiEO3K6y6PUp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Kinghao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Kinghao" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oakleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oakleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Kinghao" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -231,18 +92,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Kinghao.mapper" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -307,48 +156,6 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="796000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3143872" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="leetcode" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -363,69 +170,42 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="533" y="158" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1598135586042" />
-    <state width="1398" height="475" key="GridCell.Tab.0.bottom" timestamp="1598333290125">
+    <state width="1398" height="167" key="GridCell.Tab.0.bottom" timestamp="1598657776155">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598333290125" />
-    <state width="1398" height="475" key="GridCell.Tab.0.center" timestamp="1598333290124">
+    <state width="1398" height="167" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598657776155" />
+    <state width="1398" height="167" key="GridCell.Tab.0.center" timestamp="1598657776155">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598333290124" />
-    <state width="1398" height="475" key="GridCell.Tab.0.left" timestamp="1598333290121">
+    <state width="1398" height="167" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598657776155" />
+    <state width="1398" height="167" key="GridCell.Tab.0.left" timestamp="1598657776154">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598333290121" />
-    <state width="1398" height="475" key="GridCell.Tab.0.right" timestamp="1598333290124">
+    <state width="1398" height="167" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598657776154" />
+    <state width="1398" height="167" key="GridCell.Tab.0.right" timestamp="1598657776155">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598333290124" />
-    <state width="1398" height="475" key="GridCell.Tab.1.bottom" timestamp="1598333290126">
+    <state width="1398" height="167" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598657776155" />
+    <state width="1398" height="167" key="GridCell.Tab.1.bottom" timestamp="1598657776156">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
-    <state width="1398" height="475" key="GridCell.Tab.1.center" timestamp="1598333290126">
+    <state width="1398" height="167" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598657776156" />
+    <state width="1398" height="167" key="GridCell.Tab.1.center" timestamp="1598657776156">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
-    <state width="1398" height="475" key="GridCell.Tab.1.left" timestamp="1598333290125">
+    <state width="1398" height="167" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1598657776156" />
+    <state width="1398" height="167" key="GridCell.Tab.1.left" timestamp="1598657776156">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1598333290125" />
-    <state width="1398" height="475" key="GridCell.Tab.1.right" timestamp="1598333290126">
+    <state width="1398" height="167" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1598657776156" />
+    <state width="1398" height="167" key="GridCell.Tab.1.right" timestamp="1598657776156">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="475" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1598333290126" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Kinghao/Config/Swagger2Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Kinghao/controller/ReadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1881" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Kinghao/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="88" column="3" lean-forward="true" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <state width="1398" height="167" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1598657776156" />
+    <state x="258" y="96" key="Maven.ArtifactSearchDialog" timestamp="1598495722229">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="258" y="96" key="Maven.ArtifactSearchDialog/0.23.1440.825@0.23.1440.825" timestamp="1598495722229" />
   </component>
   <component name="masterDetails">
     <states>

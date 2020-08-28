@@ -38,6 +38,7 @@ public class ReadController {
     @ResponseBody
     public Result addRecord(ReadBook readBook, HttpServletRequest request) {
         logger.trace("open book was requested");
+        readBookService.closeBook(request);
         return readBookService.openBook(readBook, request);
     }
 

@@ -22,10 +22,16 @@ public class ReadBookService {
     public Result openBook(ReadBook readBook, HttpServletRequest request) {
         HttpSession session = request.getSession();
         User curUser=(User)session.getAttribute("user");
+        Result r =  new Result();
+        r.setSuccess(false);
+        Integer bookid = readBook.getBookId();
+        if (bookid > curUser.getBookPointer()) {
+            r.setMsg(String.format("Book %d is locked", bookid));
+            return r;
+        }
         readBook.setUsername(curUser.getUsername());
         readBook.setOpentime(new Timestamp(System.currentTimeMillis()));
         readBookMapper.openBook(readBook);
-        Result r =  new Result();
         r.setSuccess(true);
         r.setMsg(String.format("Start reading book with bookId %d", readBook.getBookId()));
         session.setAttribute("readBook", readBook);

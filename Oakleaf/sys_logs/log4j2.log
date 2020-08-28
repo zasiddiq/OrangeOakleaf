@@ -1,0 +1,6 @@
+16:44:58.357 TRACE com.Kinghao.controller.UserController 56 regist - regist was request
+16:44:58.559 TRACE com.Kinghao.service.UserService 43 regist - For name:admintesttest;Register successfully.
+16:45:29.778 TRACE com.Kinghao.controller.UserController 56 regist - regist was request
+16:45:29.897 TRACE com.Kinghao.service.UserService 43 regist - For name:abcabc;Register successfully.
+16:45:37.497 TRACE com.Kinghao.controller.UserController 56 regist - regist was request
+16:45:37.609 TRACE com.Kinghao.service.UserService 43 regist - For name:abcabc2;Register successfully.
