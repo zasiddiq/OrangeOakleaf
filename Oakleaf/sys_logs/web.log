@@ -167,3 +167,7 @@
 2020-08-28 at 16:45:29 PDT TRACE com.Kinghao.service.UserService 43 regist - For name:abcabc;Register successfully.
 2020-08-28 at 16:45:37 PDT TRACE com.Kinghao.controller.UserController 56 regist - regist was request
 2020-08-28 at 16:45:37 PDT TRACE com.Kinghao.service.UserService 43 regist - For name:abcabc2;Register successfully.
+2020-09-09 at 19:40:21 PDT TRACE com.Kinghao.controller.UserController 75 login - login was request
+2020-09-09 at 19:40:22 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
+2020-09-09 at 19:41:51 PDT TRACE com.Kinghao.controller.UserController 75 login - login was request
+2020-09-09 at 19:41:52 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
