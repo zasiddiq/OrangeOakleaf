@@ -1,10 +1,4 @@
 server:
-  ssl:
-    key-store-type: PKCS12
-    key-store: "src/main/resources/oakleaf.pfx"
-    key-store-password: "oakleafcertif"
-    key-alias: "oakleaf"
-    enabled: true
   port: 9090
 
 spring:
@@ -23,6 +17,11 @@ spring:
     #     新版本不支持content-type: text/html，故新写法
     servlet:
       content-type: text/html
+  http:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
 swagger:
   enable: true
+
 
