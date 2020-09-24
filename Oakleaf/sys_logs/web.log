@@ -317,3 +317,7 @@
 2020-09-22 at 15:34:47 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
 2020-09-22 at 17:21:40 PDT TRACE com.Kinghao.controller.UserController 75 login - login was request
 2020-09-22 at 17:21:40 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
+2020-09-23 at 18:21:32 PDT TRACE com.Kinghao.controller.UserController 75 login - login was request
+2020-09-23 at 18:21:32 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
+2020-09-23 at 18:24:29 PDT TRACE com.Kinghao.controller.UserController 75 login - login was request
+2020-09-23 at 18:24:29 PDT TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully

@@ -49,13 +49,13 @@ public class VideoController {
         Video vid = new Video();
 
         byte[] videoContent = video.getBytes();
-        HttpSession session = request.getSession();
-        String username =((User)session.getAttribute("user")).getUsername();
-        vid.setUsername(username);
+//        HttpSession session = request.getSession();
+//        String username =((User)session.getAttribute("user")).getUsername();
+        vid.setUsername("username");
         vid.setRecordTime( new Timestamp(System.currentTimeMillis()));
         vid.setDuration(duration);
         videoMapper.addRecord(vid);
-        FileOutputStream out = new FileOutputStream("~/videos/" + vid.getId() + ".webm");
+        FileOutputStream out = new FileOutputStream("/home/ubuntu/videos/" + vid.getId() + ".webm");
         out.write(videoContent);
         out.close();
         return "Successfully stored a video for user: " + "username";
@@ -90,7 +90,7 @@ public class VideoController {
         Integer userType = ((User)session.getAttribute("user")).getUserType();
 
         if (userType == 1) {
-            String filename = "~/videos/" + id + ".webm";
+            String filename = "/home/ubuntu/videos/" + id + ".webm";
             File file = new File(filename);
             InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
 

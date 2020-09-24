@@ -10,7 +10,7 @@ function insertRow(data) {
        let id = detail[i]["id"];
 
        let row = "<div class='content'> <div class='cell username'>" + detail[i]["username"] + "</div>" +
-              "<div class='content'> <div class='cell duration'>" + detail[i]["duration"] + "</div>" +
+              "<div class='cell duration'>" + detail[i]["duration"] + "</div>" +
               "<div class='cell mid'>" + new Date(detail[i]["recordTime"]).toString() + "</div>" +
               "<div class='cell'><button class='download' id='" + id + "'>↓</button></div></div>";
 
@@ -71,7 +71,6 @@ $(".loginSubmit").click(()=> {
         method: "POST",
         data: {"username":uname, "password":upass},
         success: function (data) {
-            console.log(data);
             if (data["success"] && data["detail"]["userType"] === 1) {
                 console.log("Admin Logged In");
                 $(".login").hide();

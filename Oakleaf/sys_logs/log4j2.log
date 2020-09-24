@@ -1,0 +1,2 @@
+18:24:29.330 TRACE com.Kinghao.controller.UserController 75 login - login was request
+18:24:29.520 TRACE com.Kinghao.service.UserService 70 login - admin login success: Login successfully
