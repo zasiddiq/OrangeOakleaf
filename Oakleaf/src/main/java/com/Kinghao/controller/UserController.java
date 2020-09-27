@@ -55,7 +55,7 @@ public class UserController {
     public Result regist(User user){
         logger.trace("regist was request");
         Integer userType = user.getUserType();
-        user.setBookPointer(userType == 1 ? 5 : (userType == 2 ? 0 : 3));
+        user.setBookPointer(5);
         return userService.regist(user);
     }
 
