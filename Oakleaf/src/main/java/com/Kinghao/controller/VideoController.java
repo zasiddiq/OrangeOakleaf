@@ -40,17 +40,16 @@ public class VideoController {
     @ApiOperation(value="Upload a video")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "blob", value = "A blob video file", required = true),
-            @ApiImplicitParam(name = "duration", value = "Video duration (hh:mm:ss)")
+            @ApiImplicitParam(name = "duration", value = "Video duration (hh:mm:ss)"),
+            @ApiImplicitParam(name = "username", value = "Video duration (hh:mm:ss)")
     })
     @ResponseBody
     public String insertVideo(@RequestParam("blob") MultipartFile video,
                               @RequestParam(value = "duration", required=false) String duration,
-                              HttpServletRequest request) throws IOException {
+                              @RequestParam("username") String username) throws IOException {
         Video vid = new Video();
 
         byte[] videoContent = video.getBytes();
-        HttpSession session = request.getSession();
-        String username =((User)session.getAttribute("user")).getUsername();
         vid.setUsername(username);
         vid.setRecordTime( new Timestamp(System.currentTimeMillis()));
         vid.setDuration(duration);
